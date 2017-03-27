@@ -8,7 +8,7 @@ class User:
         self.ss = Social(ss)
         self.hash = Hash(hash)
 
-    def check_password(self, passwrd):
+    def check_password(passwrd):
         return self.hash == Hash(passwrd)
 
     def __str__(self):
